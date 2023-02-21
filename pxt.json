@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "KSB045": "github:lioujj/pxt-KSB045#f6ea8f51a636c92f349853a2fc4fb92053e1c85f"
     },
     "files": [
         "main.blocks",
@@ -20,5 +21,6 @@
     },
     "supportedTargets": [
         "microbit"
-    ]
+    ],
+    "preferredEditor": "blocksprj"
 }
