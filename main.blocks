@@ -1,1 +1,25 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="onBtnChanged" id="15pCbY!aTyth[A0Hp}B0" x="474" y="-69"><field name="myBtn">KSB045.btnName.E</field><field name="dir">KSB045.pushType.down</field></block><block type="pxt-on-start" id="f%u1d6j)1$-mKk(LB@^n" x="0" y="0"><statement name="HANDLER"><block type="radio_set_group" id="[x_,l7v**QJ1QdGf.6|6"><value name="ID"><shadow type="math_number_minmax" id="pLu7!F#R6{hCyXdFAR]!"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">173</field></shadow></value></block></statement></block><block type="device_forever" id="lZ{.M6U4icH]Bv1c:}0D" x="225" y="0"></block><block type="onBtnChanged" id=":,:oq[Ows4h(4Relj_Fn" x="474" y="49"><field name="myBtn">KSB045.btnName.C</field><field name="dir">KSB045.pushType.down</field></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="onBtnChanged" id="15pCbY!aTyth[A0Hp}B0" x="513" y="-96"><field name="myBtn">KSB045.btnName.E</field><field name="dir">KSB045.pushType.down</field><statement name="HANDLER"><block type="device_show_leds" id="?k*v*)^MZ{$E^}$X6u`m"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_pause" id="@JP|efb$``@^B:D?VH6e"><value name="pause"><shadow type="timePicker" id="vu/i-}5q,O:UrA~v#N^N"><field name="ms">50</field></shadow></value><next><block type="device_clear_display" id="$2gDQ}gC!D_YX;(10%n["></block></next></block></next></block></statement></block><block type="pxt-on-start" id="f%u1d6j)1$-mKk(LB@^n" x="2" y="-12"><statement name="HANDLER"><block type="radio_set_group" id="[x_,l7v**QJ1QdGf.6|6"><value name="ID"><shadow type="math_number_minmax" id="pLu7!F#R6{hCyXdFAR]!"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">173</field></shadow></value></block></statement></block><block type="onBtnChanged" id="#qh?3#iG2KU=^(BP-/U:" x="256" y="210"><field name="myBtn">KSB045.btnName.F</field><field name="dir">KSB045.pushType.down</field><statement name="HANDLER"><block type="device_show_leds" id="reIY6-d_!iR/-=mevqSm"><field name="LEDS">`
+        . . # . . 
+        . # . . . 
+        # . . . . 
+        . # . . . 
+        . . # . .
+        `</field><next><block type="device_pause" id="}k;nQiQ_e|Sz;1EsiOlj"><value name="pause"><shadow type="timePicker" id="3;E#.z+Nc,Ay7/`d7wni"><field name="ms">50</field></shadow></value><next><block type="device_clear_display" id="*7l(M[-hgtUlsF7wDaMj"></block></next></block></next></block></statement></block><block type="onBtnChanged" id="KlT#%@k-Nj{W2y4b^oho" x="790" y="208"><field name="myBtn">KSB045.btnName.D</field><field name="dir">KSB045.pushType.down</field><statement name="HANDLER"><block type="device_show_leds" id="^RQ63yI*pJ-^ceBtg:)!"><field name="LEDS">`
+        . . # . . 
+        . . . # . 
+        . . . . # 
+        . . . # . 
+        . . # . .
+        `</field><next><block type="device_pause" id="tB*u|y#Yxt|orKmSKuYK"><value name="pause"><shadow type="timePicker" id="Lq~+~k?`+d}tvs^EN6oL"><field name="ms">50</field></shadow></value><next><block type="device_clear_display" id="90Utdz(4kh?=m:x=#7mk"></block></next></block></next></block></statement></block><block type="onBtnChanged" id=":,:oq[Ows4h(4Relj_Fn" x="510" y="941"><field name="myBtn">KSB045.btnName.C</field><field name="dir">KSB045.pushType.down</field><statement name="HANDLER"><block type="device_show_leds" id="]*9%e6./Tp@4rh=A$9=("><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # . . . # 
+        . # . # . 
+        . . # . .
+        `</field><next><block type="device_pause" id="RI7hmwLx#CVD=5!]aA:L"><value name="pause"><shadow type="timePicker" id="=B.O)EuTlo=0vpB80#J,"><field name="ms">50</field></shadow></value><next><block type="device_clear_display" id="A|fFYE@;f/|Dt0=;tS:Q"></block></next></block></next></block></statement></block></xml>
