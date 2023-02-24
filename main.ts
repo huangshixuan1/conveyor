@@ -1,5 +1,5 @@
 function 向右轉 () {
-	
+    pwm = 0
 }
 radio.onReceivedNumber(function (receivedNumber) {
     // 1 x
@@ -29,18 +29,19 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 function 向左轉 () {
-	
+    pwm = 0
 }
 function 向左跑 () {
-	
+    pwm = 0
 }
 function 上升 () {
-	
+    pwm = 0
 }
 function 向右跑 () {
-	
+    pwm = 0
 }
 function 下降 () {
-	
+    pwm = 0
 }
+let pwm = 0
 radio.setGroup(173)
