@@ -5,7 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "KSB045": "github:lioujj/pxt-KSB045#f6ea8f51a636c92f349853a2fc4fb92053e1c85f"
+        "KSB045": "github:lioujj/pxt-KSB045#f6ea8f51a636c92f349853a2fc4fb92053e1c85f",
+        "sensors": "github:gigotoys/gigo-block#42e48e853c87813ab0148b44b47b6279d797ba5e"
     },
     "files": [
         "main.blocks",
