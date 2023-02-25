@@ -46,19 +46,19 @@ function 軌道下降2 () {
 function 向左跑4 () {
     pwm = 255
     sensors.DDMmotor(
-    AnalogPin.P0,
+    AnalogPin.P1,
     0,
-    AnalogPin.P0,
-    0
+    AnalogPin.P1,
+    pwm - 155
     )
 }
 function 向右跑6 () {
     pwm = 255
     sensors.DDMmotor(
-    AnalogPin.P0,
-    0,
-    AnalogPin.P0,
-    0
+    AnalogPin.P1,
+    1,
+    AnalogPin.P1,
+    pwm - 155
     )
 }
 function 軌道上升8 () {
