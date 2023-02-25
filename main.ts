@@ -114,6 +114,12 @@ function 軌道向左轉7 () {
     AnalogPin.P12,
     pwm
     )
+    sensors.DDMmotor(
+    AnalogPin.P8,
+    0,
+    AnalogPin.P1,
+    pwm
+    )
 }
 let pwm = 0
 radio.setGroup(173)
