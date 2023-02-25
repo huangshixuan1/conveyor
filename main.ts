@@ -37,10 +37,10 @@ function 軌道向右轉9 () {
 function 軌道下降2 () {
     pwm = 255
     sensors.DDMmotor(
-    AnalogPin.P0,
-    0,
-    AnalogPin.P0,
-    0
+    AnalogPin.P15,
+    1,
+    AnalogPin.P16,
+    pwm - 155
     )
 }
 function 向左跑4 () {
@@ -64,10 +64,10 @@ function 向右跑6 () {
 function 軌道上升8 () {
     pwm = 255
     sensors.DDMmotor(
-    AnalogPin.P0,
+    AnalogPin.P15,
     0,
-    AnalogPin.P0,
-    0
+    AnalogPin.P16,
+    pwm - 155
     )
 }
 function 軌道向左轉7 () {
