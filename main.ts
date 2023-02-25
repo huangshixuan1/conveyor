@@ -35,13 +35,7 @@ function 軌道向右轉9 () {
     AnalogPin.P2,
     1,
     AnalogPin.P12,
-    pwm
-    )
-    sensors.DDMmotor(
-    AnalogPin.P8,
-    1,
-    AnalogPin.P1,
-    pwm
+    100
     )
 }
 function 軌道下降2 () {
@@ -106,13 +100,7 @@ function 軌道向左轉7 () {
     AnalogPin.P2,
     0,
     AnalogPin.P12,
-    pwm
-    )
-    sensors.DDMmotor(
-    AnalogPin.P8,
-    0,
-    AnalogPin.P1,
-    pwm
+    100
     )
 }
 let pwm = 0
