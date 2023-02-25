@@ -44,7 +44,7 @@ function 軌道向右轉9 () {
     AnalogPin.P2,
     1,
     AnalogPin.P12,
-    pwm - 155
+    pwm
     )
 }
 function 軌道下降2 () {
@@ -53,7 +53,7 @@ function 軌道下降2 () {
     AnalogPin.P15,
     1,
     AnalogPin.P16,
-    pwm
+    100
     )
 }
 function 向左跑4 () {
@@ -83,7 +83,7 @@ function 軌道上升8 () {
     AnalogPin.P15,
     0,
     AnalogPin.P16,
-    pwm
+    100
     )
 }
 function 停 () {
@@ -112,7 +112,7 @@ function 軌道向左轉7 () {
     AnalogPin.P2,
     0,
     AnalogPin.P12,
-    pwm - 155
+    pwm
     )
 }
 let pwm = 0
