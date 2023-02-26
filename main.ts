@@ -1,3 +1,6 @@
+function open () {
+    pins.servoWritePin(AnalogPin.P1, 180)
+}
 radio.onReceivedNumber(function (receivedNumber) {
     // 1 x
     // 3 x
@@ -7,12 +10,10 @@ radio.onReceivedNumber(function (receivedNumber) {
     // 2 軌道下降
     // 4 向左跑
     // 6 向右跑
-    if (receivedNumber == 7) {
-        軌道向左轉7()
-        basic.pause(100)
-    } else if (receivedNumber == 9) {
-        軌道向右轉9()
-        basic.pause(100)
+    if (receivedNumber == 1) {
+        open()
+    } else if (receivedNumber == 3) {
+        close()
     } else if (receivedNumber == 8) {
         軌道上升8()
         basic.pause(100)
@@ -22,22 +23,13 @@ radio.onReceivedNumber(function (receivedNumber) {
     } else if (receivedNumber == 4) {
         向左跑4()
         basic.pause(100)
-    } else if (receivedNumber == 6) {
+    } else if (receivedNumber >= 6) {
         向右跑6()
         basic.pause(100)
     } else {
         停()
     }
 })
-function 軌道向右轉9 () {
-    pwm = 255
-    sensors.DDMmotor(
-    AnalogPin.P2,
-    1,
-    AnalogPin.P12,
-    100
-    )
-}
 function 軌道下降2 () {
     pwm = 255
     sensors.DDMmotor(
@@ -55,6 +47,9 @@ function 向左跑4 () {
     AnalogPin.P14,
     pwm - 155
     )
+}
+function close () {
+    pins.servoWritePin(AnalogPin.P1, 0)
 }
 function 向右跑6 () {
     pwm = 255
@@ -76,9 +71,9 @@ function 軌道上升8 () {
 }
 function 停 () {
     sensors.DDMmotor(
-    AnalogPin.P11,
-    0,
     AnalogPin.P12,
+    0,
+    AnalogPin.P2,
     0
     )
     sensors.DDMmotor(
@@ -92,15 +87,6 @@ function 停 () {
     0,
     AnalogPin.P16,
     0
-    )
-}
-function 軌道向左轉7 () {
-    pwm = 255
-    sensors.DDMmotor(
-    AnalogPin.P2,
-    0,
-    AnalogPin.P12,
-    100
     )
 }
 let pwm = 0
