@@ -31,13 +31,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 function 軌道下降2 () {
-    pwm = 255
-    sensors.DDMmotor(
-    AnalogPin.P15,
-    1,
-    AnalogPin.P16,
-    100
-    )
+    pins.servoWritePin(AnalogPin.P8, 0)
 }
 function 向左跑4 () {
     pwm = 255
@@ -61,13 +55,7 @@ function 向右跑6 () {
     )
 }
 function 軌道上升8 () {
-    pwm = 255
-    sensors.DDMmotor(
-    AnalogPin.P15,
-    0,
-    AnalogPin.P16,
-    100
-    )
+    pins.servoWritePin(AnalogPin.P8, 180)
 }
 function 停 () {
     sensors.DDMmotor(
