@@ -15,10 +15,10 @@ radio.onReceivedNumber(function (receivedNumber) {
     } else if (receivedNumber == 3) {
         close()
     } else if (receivedNumber == 8) {
-        軌道上升8()
+        軌道下降2()
         basic.pause(100)
     } else if (receivedNumber == 2) {
-        軌道下降2()
+        軌道上升8()
         basic.pause(100)
     } else if (receivedNumber == 4) {
         向左跑4()
