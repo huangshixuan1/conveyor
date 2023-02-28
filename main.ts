@@ -76,6 +76,7 @@ function 停 () {
     AnalogPin.P16,
     0
     )
+    pins.servoWritePin(AnalogPin.P8, 90)
 }
 let pwm = 0
 radio.setGroup(173)
