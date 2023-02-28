@@ -23,9 +23,27 @@ radio.onReceivedNumber(function (receivedNumber) {
     } else if (receivedNumber == 4) {
         向左跑4()
         basic.pause(100)
+        basic.showLeds(`
+            . # . . .
+            # # . . .
+            # # # . #
+            . # . # .
+            . # . . #
+            `)
+        basic.pause(50)
+        basic.clearScreen()
     } else if (receivedNumber >= 6) {
         向右跑6()
         basic.pause(100)
+        basic.showLeds(`
+            . # # . .
+            # . . . .
+            # # # # .
+            # . # . #
+            . # . # .
+            `)
+        basic.pause(50)
+        basic.clearScreen()
     } else {
         停()
     }
