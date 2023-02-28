@@ -1,5 +1,5 @@
 function open () {
-    pins.servoWritePin(AnalogPin.P1, 180)
+    pins.servoWritePin(AnalogPin.P1, 80)
 }
 radio.onReceivedNumber(function (receivedNumber) {
     // 1 x
