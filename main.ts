@@ -32,7 +32,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             `)
         basic.pause(50)
         basic.clearScreen()
-    } else if (receivedNumber >= 6) {
+    } else if (receivedNumber == 6) {
         向右跑6()
         basic.pause(100)
         basic.showLeds(`
