@@ -26,10 +26,18 @@ radio.onReceivedNumber(function (receivedNumber) {
     } else if (receivedNumber == 6) {
         向右跑6()
         basic.pause(100)
+    } else if (receivedNumber == 7) {
+        turn_left()
+    } else if (receivedNumber == 9) {
+        turn_right()
     } else {
         停()
     }
 })
+function turn_right () {
+    pins.servoWritePin(AnalogPin.P12, 180)
+    pins.servoWritePin(AnalogPin.P2, 180)
+}
 function 軌道下降2 () {
     pins.servoWritePin(AnalogPin.P8, 0)
 }
@@ -59,24 +67,18 @@ function 軌道上升8 () {
 }
 function 停 () {
     sensors.DDMmotor(
-    AnalogPin.P12,
-    0,
-    AnalogPin.P2,
-    0
-    )
-    sensors.DDMmotor(
     AnalogPin.P13,
     0,
     AnalogPin.P14,
     0
     )
-    sensors.DDMmotor(
-    AnalogPin.P15,
-    0,
-    AnalogPin.P16,
-    0
-    )
     pins.servoWritePin(AnalogPin.P8, 90)
+    pins.servoWritePin(AnalogPin.P12, 90)
+    pins.servoWritePin(AnalogPin.P2, 90)
+}
+function turn_left () {
+    pins.servoWritePin(AnalogPin.P12, 0)
+    pins.servoWritePin(AnalogPin.P2, 0)
 }
 let pwm = 0
 radio.setGroup(173)
