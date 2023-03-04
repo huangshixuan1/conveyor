@@ -1,6 +1,3 @@
-function open () {
-    pins.servoWritePin(AnalogPin.P1, 80)
-}
 radio.onReceivedNumber(function (receivedNumber) {
     // 1 x
     // 3 x
@@ -11,7 +8,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     // 4 向左跑
     // 6 向右跑
     if (receivedNumber == 1) {
-        open()
+        pins.servoWritePin(AnalogPin.P1, 90)
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -20,14 +17,14 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . . . .
             `)
     } else if (receivedNumber == 3) {
+        pins.servoWritePin(AnalogPin.P1, 0)
         basic.showLeds(`
             . . . . .
             . . . . .
-            . . # # .
+            . . # . .
             . . . . .
             . . . . .
             `)
-        close()
     } else if (receivedNumber == 8) {
         軌道下降2()
         basic.pause(100)
@@ -63,9 +60,6 @@ function 向左跑4 () {
     AnalogPin.P14,
     pwm - 155
     )
-}
-function close () {
-    pins.servoWritePin(AnalogPin.P1, 0)
 }
 function 向右跑6 () {
     pwm = 255
