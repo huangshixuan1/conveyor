@@ -12,7 +12,21 @@ radio.onReceivedNumber(function (receivedNumber) {
     // 6 向右跑
     if (receivedNumber == 1) {
         open()
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
     } else if (receivedNumber == 3) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # # .
+            . . . . .
+            . . . . .
+            `)
         close()
     } else if (receivedNumber == 8) {
         軌道下降2()
